@@ -1,0 +1,1 @@
+copy food_delivery FROM STDIN with (format csv, header true, delimiter ',');
