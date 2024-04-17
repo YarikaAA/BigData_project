@@ -1,0 +1,73 @@
+{
+  "type" : "record",
+  "name" : "food_delivery",
+  "doc" : "Sqoop import of food_delivery",
+  "fields" : [ {
+    "name" : "id",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "id",
+    "sqlType" : "12"
+  }, {
+    "name" : "delivery_person_id",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "delivery_person_id",
+    "sqlType" : "12"
+  }, {
+    "name" : "delivery_person_age",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "delivery_person_age",
+    "sqlType" : "4"
+  }, {
+    "name" : "delivery_person_ratings",
+    "type" : [ "null", "float" ],
+    "default" : null,
+    "columnName" : "delivery_person_ratings",
+    "sqlType" : "7"
+  }, {
+    "name" : "restaurant_latitude",
+    "type" : [ "null", "float" ],
+    "default" : null,
+    "columnName" : "restaurant_latitude",
+    "sqlType" : "7"
+  }, {
+    "name" : "restaurant_longitude",
+    "type" : [ "null", "float" ],
+    "default" : null,
+    "columnName" : "restaurant_longitude",
+    "sqlType" : "7"
+  }, {
+    "name" : "delivery_location_latitude",
+    "type" : [ "null", "float" ],
+    "default" : null,
+    "columnName" : "delivery_location_latitude",
+    "sqlType" : "7"
+  }, {
+    "name" : "delivery_location_longitude",
+    "type" : [ "null", "float" ],
+    "default" : null,
+    "columnName" : "delivery_location_longitude",
+    "sqlType" : "7"
+  }, {
+    "name" : "type_of_order",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "type_of_order",
+    "sqlType" : "12"
+  }, {
+    "name" : "type_of_vehicle",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "type_of_vehicle",
+    "sqlType" : "12"
+  }, {
+    "name" : "time_taken",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "time_taken",
+    "sqlType" : "4"
+  } ],
+  "tableName" : "food_delivery"
+}
