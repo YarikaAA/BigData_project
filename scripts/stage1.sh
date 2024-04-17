@@ -1,5 +1,5 @@
 #!/bin/bash
-# mkdir ../data/
+mkdir ../data/
 
 # Download the data from Yandex Disk
 wget "$(yadisk-direct 'https://disk.yandex.com/d/IbqajjuvJ93o3A')" -O ../data/archive.zip
@@ -20,4 +20,4 @@ sqoop import-all-tables --connect jdbc:postgresql://hadoop-04.uni.innopolis.ru/t
  --warehouse-dir=../output --m 1
  
 # quality rate build_projectdb.py
- pylint build_projectdb.py
+pylint build_projectdb.py
