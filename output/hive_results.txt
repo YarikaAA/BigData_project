@@ -1,0 +1,1 @@
+beeline> SET hive.exec.dynamic.partition=true;

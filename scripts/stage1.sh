@@ -1,5 +1,6 @@
 #!/bin/bash
-mkdir ../data/
+# create data directory if not exists
+mkdir -p ../data/
 
 # Download the data from Yandex Disk
 wget "$(yadisk-direct 'https://disk.yandex.com/d/IbqajjuvJ93o3A')" -O ../data/archive.zip
@@ -13,6 +14,7 @@ rm ../data/archive.zip
 # run build_projectdb
 python build_projectdb.py
 
+# set password
 password=$(head -n 1 ../../secrets/.psql.pass)
 
 sqoop import-all-tables --connect jdbc:postgresql://hadoop-04.uni.innopolis.ru/team18_projectdb \
