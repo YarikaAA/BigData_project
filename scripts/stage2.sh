@@ -22,4 +22,4 @@ beeline -u jdbc:hive2://hadoop-03.uni.innopolis.ru:10001 -n team18 -p $password 
 beeline -u jdbc:hive2://hadoop-03.uni.innopolis.ru:10001 -n team18 -p $password -f ../sql/q5.hql --hiveconf hive.resultset.use.unique.column.names=false > ../output/q5.csv
 
 # quality rate hive_exec.py
-pylint hive_exec.py
+pylint scripts/hive_exec.py

@@ -12,14 +12,13 @@ unzip ../data/archive.zip  -d ../data/
 rm ../data/archive.zip
 
 # run build_projectdb
-python build_projectdb.py
+python scripts/build_projectdb.py
 
-# set password
 password=$(head -n 1 ../../secrets/.psql.pass)
 
 sqoop import-all-tables --connect jdbc:postgresql://hadoop-04.uni.innopolis.ru/team18_projectdb \
  --username team18 --password $password --compression-codec=snappy --compress --as-avrodatafile \
  --warehouse-dir=../output --m 1
- 
-# quality rate build_projectdb.py
-pylint build_projectdb.py
+
+# rate build_projectdb.py
+pylint scripts/build_projectdb.py
